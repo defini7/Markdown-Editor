@@ -1,0 +1,49 @@
+html {
+    background-image: url(./background.svg);
+}
+
+textarea, div[id="output"] {
+    width: 500px;
+    height: 800px;
+    font-size: 20px;
+    margin: auto;
+    background-color:rgb(150, 150, 150);
+    padding: 12px 20px;
+    border: 10px solid rgb(76, 76, 77);
+}
+
+textarea {
+    resize: none;
+    float: left;
+}
+
+div[id="output"] {
+    float: right;
+}
+
+.inCol, .inRaw {
+    display: flex;
+    float: right;
+}
+
+.inCol
+{
+    flex-direction: column;
+}
+
+.inRaw
+{
+    flex-direction: raw;
+}
+
+button[id="download"], input[id="filename"] {
+    margin-top: 10px;
+}
+
+button[id="download"] {
+    width: 100px;
+    height: 50px;
+    align-self: flex-end;
+    border-radius: 10px;
+    margin-left: 25px;
+}
