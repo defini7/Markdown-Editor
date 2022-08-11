@@ -1,5 +1,5 @@
 html {
-    background-image: url(./background.svg);
+    background-color: aliceblue;
 }
 
 textarea, div[id="output"] {
@@ -23,7 +23,6 @@ div[id="output"] {
 
 .inCol, .inRaw {
     display: flex;
-    float: right;
 }
 
 .inCol
@@ -36,14 +35,18 @@ div[id="output"] {
     flex-direction: raw;
 }
 
-button[id="download"], input[id="filename"] {
+button[id="download"], button[id="upload"], input[id="download-filename"], input[id="upload-file"] {
     margin-top: 10px;
 }
 
-button[id="download"] {
-    width: 100px;
-    height: 50px;
-    align-self: flex-end;
-    border-radius: 10px;
-    margin-left: 25px;
+#containerInput {
+    float: left;
+}
+
+#containerOutput {
+    float: right;
+}
+
+.justify-right {
+    justify-content: right;
 }
